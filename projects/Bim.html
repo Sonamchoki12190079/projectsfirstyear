@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My WebPage</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+   <script>
+    function computeBMI()
+    {
+      var height=document.getElementById("height").value;
+      var weight=document.getElementById("weight").value;
+      var bmi=parseFloat(weight)/(parseFloat(height)*parseFloat(height));
+      if(bmi<18.5)
+      {
+        alert("your BMI is :"+bmi+"---you are underweight.");
+      }
+      else if(bmi>18.5 && bmi<24.9)
+      {
+        alert("your BMI is :"+bmi+"---You are Healthy");
+      }
+      else if(bmi>24.9 && bmi<29.9)
+      {
+        alert("your BMI is :"+bmi+"---You are overweight");
+      }
+      else if(bmi>29.9)
+      {
+        alert("your BMI is :"+bmi+"---You are obese");
+      }
+      else
+      {
+        alert("Please enter the values");
+      }
+    }
+  </script>
+
+</head>
+<body>
+<div style="background-color:#000;">
+ <div class="container-fluid padding">
+  <div class="row padding">
+   <div class="col-xs-16 col-md-11 col-lg-12 col-xl-12 mar_text">
+      <marquee behavior="scroll" direction="left" style="color: red;"><h3>MY FIRST WEBSITE ON  PERSONAL INFORMATION<br><q>WE BECOME WHAT WE THINK ABOUT</q></h3></marquee>
+    </div>
+</div>
+</div>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <picture style="color: white;">WELCOME TO SCHOKI PAGE</picture>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">About Me</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item"href="bio.html">Bio-data</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item"href="fam.html">Family</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fprint.html">My Footprint</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="ev.html">Events</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Bim.html">BMI</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Course</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item"href="first.html">First_semester</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item"href="second.html">Second_semester</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">Eduction</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item"href="CVit.html">Curriculumn_vitea</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item"href="result.html">Semester_Result</a>
+          </div>
+        </li>
+       
+      </ul>
+      
+    </div>
+  </nav>
+  <div class="container-fluid padding">
+  <div class="row padding">
+    <div class="col-xs-16 col-md-11 col-lg-12 col-xl-12">
+      <p style="color: white;"><q>
+        A healthy nation is a wealthy nation</q>.Healthcare and medicine is a broad term thats refers to a system involving maintenance and enhancement of medical services to cater to health demands of human beings and other living creatures.Body mass index gives awareness on how to maintain health life with regular exercise like jogging, playing game to avoid from disease .It categorized as underweight(BMI<18.5kg/m2),normal(18.5-24.9kg/m2),overweight(BMI:25-29.9kg/m2).Obesity is further subdivided into grade I(BIM:30-34.5kg/m2), grade II(BIM:35-39.9kg/m2) and grade III- morbidly obese(BIM>40kg/m2).
+      </p>
+    </div>
+  </div>
+  <p style="text-align:center;color: blue;">Body Mass Index (BMI)</p>
+  <p style="text-align: center;color:blue;">Calculate Your BMI here</p>
+  <p style="text-align: center;color:brown;">Enter your height in m: <input type="text" id="height"/></p>
+  <p style="text-align: center;color: brown;">Enter your weight in kg: <input type="text" id="weight"/></p>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="computeBMI()">Calculate</button><br>
+<div class="container-fluid padding">
+  <div class="row text-right">
+    <div class="col-md-12 col-lg-6">
+      <h3 style="text-align: right;color: pink;">About my body mass index</h3>
+      <hr class="light" style="color:#fff;">
+      <p style="color:#fff;">Height: 160</p>
+      <p style="color:#fff;">Weight:54</p>
+      <p style="color:#fff;">BMI:21</p>
+      <p style="color:#fff;">I am fall under normal or healthy.</p>
+    </div>
+  </div>
+</div>
+</div>
+<footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 footer-con">
+            <h4>Contact Me</h4>
+            <p><strong>Present-Location:</strong>Mongar,Gyalpozhing<br>
+              <strong>Email:</strong>Csonamchoki98@gmail.com OR <br>12190079.gcit@rub.edu.bt<br><q>Use social media to show who you are and what you stand for</q></p>
+            <div class="social-links">
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-linkedin"></i></a>
+            </div>  
+          </div>
+          <div class="col-lg-4 col-md-6 footer-sis">
+            <h4>Sister Colleges</h4>
+            <ul>
+              <li><a href="https://www.cst.edu.bt/">College of Science and Technology</a></li>
+              <li><a href="https://www.jnec.edu.bt/">Jigme Namgyal Enginnering College</a></li>
+              <li><a href="https://www.sherubtse.edu.bt/">Sherubtse College</a></li>
+              <li><a href="https://www.cnr.edu.bt/">College of Natural Resources </a></li>
+              <li><a href="https://www.gcbs.edu.bt/">Gedu College of Business Studies</a></li>
+              <li><a href="https://www.pce.edu.bt/">Paro College of Education</a></li>
+              <li><a href="https://www.clcs.edu.bt/">College of Language and Culture Studies</a></li>
+            </ul> 
+          </div>
+          <div class="col-lg-4 col-md-6 footer-fed">
+            <h4>FeedBack Form</h4>
+            <p>_____ ______ ______ ______ ______ _____ ______ _______ _______ _________ _______ ______ ______ ______ ___ ______ ______ ______ ______ _______ _______ ______ _____ ______ ________ ______ ________ _______ ______ ______ ______ ______ ______ ________ _______ _______ _______ ________ _________ ________ ________ _________ _______ .</p>
+            <form accept="" method="post">
+            <input type="Email" name="Email"><input type="Submit" value="comments">
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright Sonam choki 2020. All rights reserved  
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
